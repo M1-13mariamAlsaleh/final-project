@@ -217,11 +217,14 @@ title{
     min-height: 4rem;
     padding: 1rem;
     font-weight: bold;
-    color: #a5a5a5;
+    color: #000000;
     letter-spacing: 2px;
     font-family:"open sans", sans-serif;
     resize: none;
 
+}
+.input{
+    color: aliceblue;
 }
 .form-btn{
     margin-top: 2.5rem;
@@ -343,7 +346,7 @@ title{
     
 }
 .paragraph{
-    color: #a5a5a5;
+    color:var(--dark-color);
     margin-bottom: 2.5rem ;
 }
 /* corner style */
@@ -447,7 +450,10 @@ title{
 }
 .contact-wrap{
     display: none;
-
+    border-radius: 15px;
+}
+.IMG{
+    border-radius: 15px;  
 }
 .contact-form{
     width: 100%;
@@ -458,7 +464,7 @@ title{
 .contact-form .input{
     display: block;
     background-color: transparent;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: normal;
     border-bottom: 2px solid lavender;
     padding-left: 0;
@@ -522,3 +528,69 @@ title{
     margin: auto;
 }
 
+@media screen and (min-width: 768px){
+    .header{
+        height: 10rem;
+    }
+    .header.active{
+        height: 6rem;
+
+    }
+    .title{
+        font-size: 8rem;
+    }
+    .contact-content{
+        justify-content: space-between;
+    }
+    .contact-wrap{
+        display: block;
+        flex: 0 0 45%;
+
+
+    }
+    .contact-wrap img{
+        width: 100%;
+
+    }
+    .contact-form{
+        flex: 0 0 50%;
+
+    }
+    .input-group-wrap{
+        display:flex;
+
+    }
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .input-group-wrap .input-group:last-child{
+        
+        margin-right: 2rem;
+    }
+    .footer{
+        overflow-x: hidden;
+
+    }
+    .footer-content{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .footer-content-brand{
+        margin-bottom: 0;
+        flex: 0 0 60%;
+
+    }
+    .footer .paragraph{
+        margin-top: 2.5rem;
+
+    }
+    .footer-heading{
+        margin-bottom: 5rem;
+
+    }
+    .social-media-wrap{
+        flex: 0 0 40%;
+        /* margin-left: 2.5rem; */
+    }
+}
